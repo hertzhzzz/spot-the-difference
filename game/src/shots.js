@@ -35,6 +35,7 @@ export function stageShot(name, game) {
     game.startLevel(0);
     game.findAt(92, 62);
     game.findAt(302, 148);
+    state.timeLeft = 0;
     game.gameOver('time');
     return { screen: state.screen };
   }
